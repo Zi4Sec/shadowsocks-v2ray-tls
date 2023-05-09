@@ -41,5 +41,5 @@ docker ps -a
 
 ### client tools
 In order to you the service in client-side, you need to get appropriate files from below links:
-https://github.com/shadowsocks/
-https://github.com/shadowsocks/v2ray-plugin/releases
+- https://github.com/shadowsocks/
+- https://github.com/shadowsocks/v2ray-plugin/releases
