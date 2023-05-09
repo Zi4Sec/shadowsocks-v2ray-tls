@@ -1,6 +1,6 @@
 ### Get project
 ```bash
-https://github.com/zianazari/shadowsocks-v2ray-tls.git
+git clone https://github.com/zianazari/shadowsocks-v2ray-tls.git
 ```
 
 ### Install certbot on your ubuntu
