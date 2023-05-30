@@ -1,4 +1,4 @@
-Using this project, you can run a shadowsocks proxy by its v2ray plugin.
+Using this project, you can run a docker-based shadowsocks proxy by its v2ray plugin.
 
 It originates from https://github.com/AhmadRafiee/shadowsocks-with-v2ray and gives some extra elaboration.
 
