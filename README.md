@@ -1,3 +1,6 @@
+Using this project, you can run a shadowsocks proxy by its v2ray plugin
+It originates from https://github.com/AhmadRafiee/shadowsocks-with-v2ray and gives some extra elaboration.
+
 ### Get project
 ```bash
 git clone https://github.com/zianazari/shadowsocks-v2ray-tls.git
