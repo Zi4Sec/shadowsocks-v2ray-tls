@@ -18,8 +18,9 @@ certbot --version
 ```
 
 ### Create `certificate` and `privatekey` with `certbot` command
+
+- change YOUR_EMAIN_ADDRESS and DOMAIN_NAME to your own.
 ```bash
-#change YOUR_EMAIN_ADDRESS and DOMAIN_NAME to your own.
 certbot certonly --standalone --preferred-challenges http --non-interactive --agree-tos --email <YOUR_EMAIN_ADDRESS> -d <DOMAIN_NAME>
 ```
 then, copy *pem* files in certs directory.
