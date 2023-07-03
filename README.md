@@ -25,7 +25,7 @@ certbot certonly --standalone --preferred-challenges http --non-interactive --ag
 ```
 then, copy *pem* files in certs directory.
 
-### change `docker-compose.yml`
+### change `config/config.json`
 - change DOMAIN_NAME to your own
 - change PASSWORD to your own
 
