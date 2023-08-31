@@ -43,6 +43,7 @@ sudo vi /etc/ssh/sshd_config
  then make vpn user the owner of required files 
 ```bash
 chown -R vpn:vpn shadowsocks-v2ray-tls
+chmod 755 -R shadowsocks-v2ray-tls
 ```
 
 ### Run the service
