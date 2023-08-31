@@ -17,7 +17,7 @@ apt install certbot -y
 certbot --version
 ```
 
-### Create `certificate` and `privatekey` with `certbot` command
+### Create `certificate` and `privatekey` with certbot command
 
 - change YOUR_EMAIN_ADDRESS and DOMAIN_NAME to your own.
 ```bash
