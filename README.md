@@ -2,6 +2,12 @@ Using this project, you can run a docker-based shadowsocks proxy by its v2ray pl
 
 It comes originally from [here](https://github.com/AhmadRafiee/shadowsocks-with-v2ray) with some extra elaboration.
 
+### Prerequisite
+install Docker
+```text
+https://docs.docker.com/engine/install/ubuntu/
+```
+
 ### Get `project`
 ```bash
 git clone https://github.com/zianazari/shadowsocks-v2ray-tls.git
