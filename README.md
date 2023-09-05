@@ -34,7 +34,7 @@ cp /etc/letsencrypt/live/ffuf.ir/privkey.pem certs
 - change PASSWORD to your own
 
 
-### Change `directory permissions`
+### Add a new non roor user and change the directory permissions
 - It is better to run the service as a nonroot user.
   ```bash
   sudo adduser vpn
