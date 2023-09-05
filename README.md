@@ -24,6 +24,10 @@ certbot --version
 certbot certonly --standalone --preferred-challenges http --non-interactive --agree-tos --email <YOUR_EMAIN_ADDRESS> -d <DOMAIN_NAME>
 ```
 then, copy *pem* files in certs directory.
+```bash
+cp /etc/letsencrypt/live/ffuf.ir/fullchain.pem certs
+cp /etc/letsencrypt/live/ffuf.ir/privkey.pem certs
+```
 
 ### change `config/config.json`
 - change DOMAIN_NAME to your own
