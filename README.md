@@ -3,14 +3,15 @@ Using this project, you can run a docker-based shadowsocks proxy by its v2ray pl
 It comes originally from [here](https://github.com/AhmadRafiee/shadowsocks-with-v2ray) with some extra elaboration.
 
 ### Prerequisite
-install Docker
+1-Docker
 ```text
 https://docs.docker.com/engine/install/ubuntu/
 ```
+2- A domain
 
 ### Get `project`
 ```bash
-git clone https://github.com/zianazari/shadowsocks-v2ray-tls.git
+git clone https://github.com/Zi4Sec/shadowsocks-v2ray-tls.git
 ```
 
 ### Install `certbot` on your ubuntu
@@ -25,9 +26,9 @@ certbot --version
 
 ### Create `certificate` and `privatekey` with certbot command
 
-- change YOUR_EMAIN_ADDRESS and DOMAIN_NAME to your own.
+- change YOUR_EMAIL_ADDRESS and DOMAIN_NAME to your own.
 ```bash
-certbot certonly --standalone --preferred-challenges http --non-interactive --agree-tos --email <YOUR_EMAIN_ADDRESS> -d <DOMAIN_NAME>
+certbot certonly --standalone --preferred-challenges http --non-interactive --agree-tos --email <YOUR_EMAIL_ADDRESS> -d <DOMAIN_NAME>
 ```
 then, copy *pem* files in certs directory.
 ```bash
