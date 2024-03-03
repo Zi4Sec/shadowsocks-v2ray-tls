@@ -1,6 +1,6 @@
 Using this project, you can run a docker-based shadowsocks proxy by its v2ray plugin.
 
-It comes originally from [here](https://github.com/AhmadRafiee/shadowsocks-with-v2ray) with some extra elaboration.
+It comes originally from [here](https://github.com/AhmadRafiee/shadowsocks-with-v2ray) with some extra elaboration and changes.
 
 ### Prerequisite
 1-Docker
@@ -32,8 +32,8 @@ certbot certonly --standalone --preferred-challenges http --non-interactive --ag
 ```
 then, copy *pem* files in certs directory.
 ```bash
-cp /etc/letsencrypt/live/ffuf.ir/fullchain.pem certs
-cp /etc/letsencrypt/live/ffuf.ir/privkey.pem certs
+cp /etc/letsencrypt/live/<DOMAIN_NAME>/fullchain.pem certs
+cp /etc/letsencrypt/live/<DOMAIN_NAME>/privkey.pem certs
 ```
 
 ### change `config/config.json`
@@ -42,7 +42,7 @@ cp /etc/letsencrypt/live/ffuf.ir/privkey.pem certs
 
 
 ### Add a new non roor user and change the directory permissions
-- It is better to run the service as a nonroot user.
+- It is better to run the service as a non-root user.
   ```bash
   sudo adduser vpn
   ```
@@ -50,7 +50,7 @@ cp /etc/letsencrypt/live/ffuf.ir/privkey.pem certs
 ```bash
 sudo vi /etc/ssh/sshd_config
 ```
-- press i and add `AllowUsers user1 user2` to end of the file
+- press i and add `AllowUsers user1 user2` to end of the file, but not add this non-root user.
  then make vpn user the owner of required files 
 ```bash
 chown -R vpn:vpn shadowsocks-v2ray-tls
@@ -60,7 +60,10 @@ chmod 755 -R shadowsocks-v2ray-tls
 ### Run the service
 ```bash
 docker compose up -d
-#check it is ok
+```
+
+### check every thing is ok and the service is working on the specified port.
+```bash
 docker ps -a
 ```
 
